@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+/************************************************
+ *        ETIQUETAS                             *
+ ************************************************/
+body{
+    background: url(../img/fondo1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+/* título de los divs */
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+/* botón y caja de texto */
+input[type="text"], input[type="button"]{
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px grey;
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+input[type="button"]{
+    font-weight: bold;
+}
+
+input[type="button"]:hover{
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+/************************************************
+ *        CLASES                             *
+ ************************************************/
+
+ /* DIVs que contiene las horas*/
+ .sevilla, .formulario{
+    margin:80px auto;
+    max-width: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px grey;
+    opacity: .9;
+}
+
+/* Contenedor hora sevilla y contenedor hora ciudad y caja de texto y botón*/
+.sevilla, .formulario{
+   background-color: bisque;
+}
+
+
+/* DIVS con la caja de texto, botón y etiqueta */
+.botones{
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.botones p, .sugerencia{
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+ /* Muestra la sugerencia de los países*/
+.sugerencia{
+    margin-left: 25px;
+    font-family: sans-serif;
+}
+
+.sugerencia span{
+    color: red;
+    font-weight: bold;
+}
+
+/* ESTILOS DEL DIV QUE MUESTRA LA HORA */
+.cont-hora{
+    background-color: aquamarine;
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px grey;
+    height: 80px;
+    font-size: 4vw;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hora{
+    background-color: coral;
+}
+
+
+
+/************************************************
+ *                       ID                       *
+ ************************************************/
+#error{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 536px){
+    .botones{
+        display: block;
+    }
+    
+    .sugerencia{
+        margin-left: -15px;
+    }
+    
+    input[type="button"]{
+        margin-left: 50px;
+    }
+    
+}
+
+
